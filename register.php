@@ -47,9 +47,9 @@
 				    try {
 				        //Server settings
 				        $mail->isSMTP();                                     
-				        $mail->Host = 'cpsrv17.misshosting.com';                      
+				        $mail->Host = '';                      
 				        $mail->SMTPAuth = true;                               
-				        $mail->Username = 'sales@threeboxes.se';     
+				        $mail->Username = '';     
 						$mail->Password = '';                 
 				        $mail->SMTPOptions = array(
 				            'ssl' => array(
@@ -61,11 +61,11 @@
 				        $mail->SMTPSecure = 'ssl';                           
 				        $mail->Port = 465;                                   
 
-				        $mail->setFrom('sales@threeboxes.se');
+				        $mail->setFrom('');
 				        
 				        //Recipients
 				        $mail->addAddress($email);              
-						$mail->addReplyTo('sales@threeboxes.se');
+						$mail->addReplyTo('');
 						//$mail->addCC('');
 				       
 				        //Content
