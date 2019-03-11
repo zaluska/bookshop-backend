@@ -50,7 +50,7 @@
 				        $mail->Host = 'cpsrv17.misshosting.com';                      
 				        $mail->SMTPAuth = true;                               
 				        $mail->Username = 'sales@threeboxes.se';     
-						$mail->Password = 'salespwd11';                 
+						$mail->Password = '';                 
 				        $mail->SMTPOptions = array(
 				            'ssl' => array(
 				            'verify_peer' => false,
@@ -66,7 +66,7 @@
 				        //Recipients
 				        $mail->addAddress($email);              
 						$mail->addReplyTo('sales@threeboxes.se');
-						//$mail->addCC('cvlpa1@gmail.com');
+						//$mail->addCC('');
 				       
 				        //Content
 				        $mail->isHTML(true);                                  
